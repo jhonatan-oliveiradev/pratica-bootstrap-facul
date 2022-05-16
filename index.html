@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap sample</title>
+    <link rel="shortcut icon" href="fav.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand">
+      <div class="container">
+        <a href="#" class="navbar-brand">Start Bootstrap</a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Services</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div
+            class="banner bg-dark py-5 d-flex flex-column align-items-center"
+          >
+            <div class="text-white text-center w-50 mb-2">
+              <h1>Present your business in a whole new way</h1>
+              <p class="text-white-50">
+                Quickly design and customize responsive mobile-first sites with
+                Bootstrap, the world's most popular front-end open source
+                toolkit!
+              </p>
+            </div>
+            <div>
+              <button class="btn btn-primary">Get Started</button>
+              <button class="btn btn-outline-light">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div
+            class="banner bg-dark py-5 d-flex flex-column align-items-center"
+          >
+            <div class="text-white text-center w-50 mb-2">
+              <h1>Use a modern and reponsive design framework</h1>
+              <p class="text-white-50">
+                Quickly design and customize responsive mobile-first sites with
+                Bootstrap, the world's most popular front-end open source
+                toolkit!
+              </p>
+            </div>
+            <div>
+              <button class="btn btn-primary">Get Started</button>
+              <button class="btn btn-outline-light">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div
+            class="banner bg-dark py-5 d-flex flex-column align-items-center"
+          >
+            <div class="text-white text-center w-50 mb-2">
+              <h1>Make sites and web interfaces fast with Bootstrap</h1>
+              <p class="text-white-50">
+                Quickly design and customize responsive mobile-first sites with
+                Bootstrap, the world's most popular front-end open source
+                toolkit!
+              </p>
+            </div>
+            <div>
+              <button class="btn btn-primary">Get Started</button>
+              <button class="btn btn-outline-light">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </header>
+
+    <main class="container-fluid p-5">
+      <div class="row">
+        <div class="col-4">
+          <div class="card py-4 px-2">
+            <div class="card-body">
+              <h3 class="card-title small text-muted"><b>FREE</b></h3>
+              <p class="card-text">
+                <span class="display-3"><strong>$0</strong></span>
+                <span class="text-muted">/mo.</span>
+              </p>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <i class="bi bi-check"></i>
+                  <strong>1 users</strong>
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check"></i>
+                  5GB Storage
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check"></i>
+                  Unlimited public projects
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check"></i>
+                  Community access
+                </li>
+                <li class="mb-2 text-muted">
+                  <i class="bi bi-x"></i>
+                  Unlimited private projects
+                </li>
+                <li class="mb-2 text-muted">
+                  <i class="bi bi-x"></i>
+                  Dedicated support
+                </li>
+                <li class="mb-2 text-muted">
+                  <i class="bi bi-x"></i>
+                  Free linked domain
+                </li>
+                <li class="mb-2 text-muted">
+                  <i class="bi bi-x"></i>
+                  Monthly status reports
+                </li>
+              </ul>
+              <a
+                href="#"
+                class="btn btn-outline-primary w-100"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                >Choose plan</a
+              >
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <form action="mailto:to=test@test.com">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Payment details
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="mb-2 row">
+                          <label for="holder_name" class="form-label col-4"
+                            >Holder:</label
+                          >
+                          <input
+                            name="holder_name"
+                            type="text"
+                            class="form-control col"
+                          />
+                        </div>
+                        <div class="mb-2 row">
+                          <label for="card_number" class="form-label col-4"
+                            >Card number:</label
+                          >
+                          <input
+                            name="card_number"
+                            type="text"
+                            class="form-control col"
+                          />
+                        </div>
+                        <div class="mb-2 row">
+                          <label for="expiration_date" class="form-label col-4"
+                            >Expiration date:</label
+                          >
+                          <input
+                            name="expiration_date"
+                            type="text"
+                            class="form-control col"
+                          />
+                        </div>
+                        <div class="mb-2 row">
+                          <label for="cvv" class="form-label col-4">CVV:</label>
+                          <input
+                            name="cvv"
+                            type="text"
+                            class="form-control col"
+                          />
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Cancel
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                          Confirm
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card py-4 px-2">
+            <div class="card-body">
+              <h3 class="card-title small text-muted">
+                <i class="bi bi-star-fill" style="color: rgb(255, 230, 0)"></i>
+                <b>PRO</b>
+              </h3>
+              <p class="card-text">
+                <span class="display-3"><strong>$9</strong></span>
+                <span class="text-muted">/mo.</span>
+              </p>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <i class="bi bi-check"></i>
+                  <strong>5 users</strong>
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check"></i>
+                  5GB Storage
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check"></i>
+                  Unlimited public projects
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check"></i>
+                  Community access
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check"></i>
+                  Unlimited private projects
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check"></i>
+                  Dedicated support
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check"></i>
+                  Free linked domain
+                </li>
+                <li class="mb-2 text-muted">
+                  <i class="bi bi-x"></i>
+                  Monthly status reports
+                </li>
+              </ul>
+              <a href="#" class="btn btn-primary w-100">Choose plan</a>
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <form action="mailto:to=test@test.com">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Payment details
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="mb-2 row">
+                          <label for="holder_name" class="form-label col-4"
+                            >Holder:</label
+                          >
+                          <input
+                            name="holder_name"
+                            type="text"
+                            class="form-control col"
+                          />
+                        </div>
+                        <div class="mb-2 row">
+                          <label for="card_number" class="form-label col-4"
+                            >Card number:</label
+                          >
+                          <input
+                            name="card_number"
+                            type="text"
+                            class="form-control col"
+                          />
+                        </div>
+                        <div class="mb-2 row">
+                          <label for="expiration_date" class="form-label col-4"
+                            >Expiration date:</label
+                          >
+                          <input
+                            name="expiration_date"
+                            type="text"
+                            class="form-control col"
+                          />
+                        </div>
+                        <div class="mb-2 row">
+                          <label for="cvv" class="form-label col-4">CVV:</label>
+                          <input
+                            name="cvv"
+                            type="text"
+                            class="form-control col"
+                          />
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Cancel
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                          Confirm
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card py-4 px-2">
+            <div class="card-body">
+              <h3 class="card-title small text-muted"><b>ENTERPRISE</b></h3>
+              <p class="card-text">
+                <span class="display-3"><strong>$49</strong></span>
+                <span class="text-muted">/mo.</span>
+              </p>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <i class="bi bi-check"></i>
+                  <strong>Unlimited users</strong>
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check"></i>
+                  5GB Storage
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check"></i>
+                  Unlimited public projects
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check"></i>
+                  Community access
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check"></i>
+                  Unlimited private projects
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check"></i>
+                  Dedicated support
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check"></i>
+                  Free linked domain
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check"></i>
+                  Monthly status reports
+                </li>
+              </ul>
+              <a href="#" class="btn btn-outline-primary w-100">Choose plan</a>
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <form action="mailto:to=test@test.com">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Payment details
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="mb-2 row">
+                          <label for="holder_name" class="form-label col-4"
+                            >Holder:</label
+                          >
+                          <input
+                            name="holder_name"
+                            type="text"
+                            class="form-control col"
+                          />
+                        </div>
+                        <div class="mb-2 row">
+                          <label for="card_number" class="form-label col-4"
+                            >Card number:</label
+                          >
+                          <input
+                            name="card_number"
+                            type="text"
+                            class="form-control col"
+                          />
+                        </div>
+                        <div class="mb-2 row">
+                          <label for="expiration_date" class="form-label col-4"
+                            >Expiration date:</label
+                          >
+                          <input
+                            name="expiration_date"
+                            type="text"
+                            class="form-control col"
+                          />
+                        </div>
+                        <div class="mb-2 row">
+                          <label for="cvv" class="form-label col-4">CVV:</label>
+                          <input
+                            name="cvv"
+                            type="text"
+                            class="form-control col"
+                          />
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Cancel
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                          Confirm
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"
+  ></script>
+</html>
