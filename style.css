@@ -9,3 +9,12 @@
 .banner {
   height: 315px;
 }
+
+.call-to-buy {
+  margin-bottom: 2.5rem;
+}
+
+.call-to-buy h1 {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
